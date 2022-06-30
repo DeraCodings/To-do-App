@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Styling the header */
+#header {
+    text-align: center;
+    margin: .3em .1em;
+    padding: .5em 1em 2em;
+}
+
+#header > h1 {
+    color: #f00;
+}
+
+/* Styling the form */
+#fieldset {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+fieldset {
+    padding: 2em 5em;
+    width: 50%;
+    
+}
+
+#input {
+    margin-bottom: 1em;
+    /* max-width: 100%; */
+    min-width: 100%;
+    padding: 1em 4em;
+}
+
+#input:focus {
+    outline: none;
+}
+
+button {
+    padding: .3em;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255,0,0,0.9);
+    color: #c0c0c0;
+    cursor: pointer;
+}
+
+button:focus, button:active {
+    outline: none;
+}
+
+/* Styling the post section */
+#post {
+    margin: 1em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#post p {
+    color: #f00;
+}
