@@ -1,3 +1,3 @@
-# To-do-App
-A to-do application 
-A simple to-do app for beginners in JavaScript 
+# Beginner JS Projects 
+These are my first taste of building projects without tutorials 
+Help me improve them and give me some feed back
