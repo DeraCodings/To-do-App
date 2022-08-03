@@ -136,3 +136,35 @@ input::after{
     color: red;
     text-align: center;
 }
+
+#table-foot {
+    width: fit-content;
+    text-align: end;
+    background-color: rgb(206, 233, 166);
+    color: #777;
+    font-weight: bolder;
+    /* padding: 1em; */
+}
+
+#sum, #delete-sum {
+    padding: .2em;
+    border-radius: 3px;
+    border: none;
+    background-size: 500%;
+    animation: anime 4s 0.3s infinite alternate-reverse forwards;
+    background-image: linear-gradient(30deg, rgb(47, 180, 47), rgb(13, 214, 13), coral, yellow, rgb(212, 74, 74), purple);
+    font-weight: 900;
+    color: rgb(189, 211, 216);
+}
+
+#sum {
+    margin-bottom: .5em;
+    margin-top: 1.5em;
+    
+}
+
+
+@keyframes anime {
+    0%{background-position: right;}
+    100%{background-position: left;}
+}
