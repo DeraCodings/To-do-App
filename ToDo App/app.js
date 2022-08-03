@@ -6,25 +6,20 @@ const error = document.getElementById('error');
 // console.log(form.innerHTML);
 error.style.color = '#f00';
 
+
 const data = {};
 
-const deletePost = (x) => {
-    x.parentElement.parentElement.remove();
-    // console.log('deleted');
-}
 
 //uploading the data to the screen
 
 const uploadData = () => {
     post.innerHTML += `
     <div>
-        <p>${data.text}</p>
-        <span class="options">
-            <button class="blue" onclick="editPost(this)">Edit</button>
-            <button class="red" onclick="deletePost(this)">Delete</button>
-            </span>
-        </div>
-        <hr>
+    <p>${data.text}</p>
+    <span class="options">
+        <button class='red'
+    </span>
+    </div>
     `;
     input.value = '';
 }
@@ -61,9 +56,19 @@ form.addEventListener('submit', (e) => {
     formValidate();
 });
 
+// const deleteBtn = document.createElement('button');
+// deleteBtn.classList.add('red');
+// deleteBtn.innerText = 'Delete';
+// const span = document.querySelector('.options');
+// span.appendChild(deleteBtn);
 
 // deleting post
+const deletePost = (x) => {
+    x.parentElement.parentElement.remove();
+    console.log('deleted');
+}
 
+// deleteBtn.addEventListener('click', deletePost(this));
 
 // editing post
 
