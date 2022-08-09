@@ -1,0 +1,140 @@
+$light-color: #f4f4f4;
+$font-stack: Arial, Helvetica, sans-serif;
+$primary-color: #79bd0b;
+$dark-color: #333;
+
+button {
+    padding: .5em .7em;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+    transition: background-color 200ms ease-in;
+}
+
+// .light-body {
+//     background-color: $light-color;
+// }
+
+.dark-body {
+    background-color: $dark-color;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2.5rem;
+    margin: 2%;
+}
+
+.main-header {
+    .text-container {
+        text-align: center;
+    }
+
+    button {
+        margin: .5em 1em;
+        border-radius: 20px;
+    }
+
+    .light-theme::before {
+        content: 'Dark';
+    }
+    .light-theme:active, .light-theme:focus{
+        outline: $dark-color 1px solid;
+    }
+
+    .light-theme{
+        border: $light-color 2px solid;
+        background-color: $primary-color;
+        color: $light-color;
+    }
+
+    .dark-theme {
+        border: $dark-color 2px solid;
+        background-color: $light-color;
+        color: $dark-color;
+    }
+    .dark-theme:active, .dark-theme:focus{
+        outline: $light-color 1px solid;
+    }
+    .dark-theme::before {
+        content: 'Light';
+    }
+}
+
+#section {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-wrapper{
+        text-align: center;
+        padding: 3%;
+
+        button {
+            margin-top: 1.5rem;
+            background-color: $primary-color;
+            border-radius: 8px;
+        }
+
+        .check-match {
+            border: $light-color 1px solid;
+            color: $light-color;
+        }
+
+        .check-match-dark {
+            color: $dark-color;
+            border: $primary-color 1px solid;
+        }
+
+        .text {
+            background-color: $light-color;
+            border: $dark-color 1px solid;
+        }
+        
+        .text-dark {
+            background-color: $dark-color;
+            border: $primary-color 1px solid;
+            color: $light-color;
+        }
+        
+    }
+}
+
+.span{
+    color: $primary-color;
+}
+
+.caption-dark {
+    color: $light-color;
+}
+
+.h1-dark {
+    color: $light-color;
+}
+.small-dark {
+    color: $light-color;
+}
+
+.error {
+    margin-top: 2em;
+    letter-spacing: 1px;
+}
+
+input{
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 2em;
+    padding: .3em;
+}
