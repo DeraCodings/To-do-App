@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do app</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     
     <!-- <script src="app.js" defer type="module"></script> -->
@@ -20,8 +21,8 @@
     <!-- a to-do app -->
     <section class="input-field">
         <form id="form">
-            <textarea name="text" id="text" cols="50" rows="10"></textarea>
-            <br>
+            <input name="text" id="text" class="text"/>
+            
         <!-- <input type="button" value="Add" name="Add"> -->
             <button type="submit" id="btn">Add Task</button>
             <div id="error"></div>
@@ -30,13 +31,18 @@
 
     <div id="post">
         <ul>
-            
+            <li>
+                <strong>${data.content}</strong>
+                <button class='edit' onclick='editPost(this)'>Edit</button>
+                <button class='delete' onclick='deletePost(this)'>Delete</button>
+                <button class='cross-off' onclick='crossOff(this)'>Done</button>
+            </li><br>
         </ul>
     </div>
 
-    <footer>
+    <!-- <footer>
         <span>Designed By:</span>
         <span>Dera Codex</span>
-    </footer>
+    </footer> -->
 </body>
 </html>

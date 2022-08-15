@@ -3,7 +3,7 @@
 */
 
 const form = document.getElementById('form');
-const text = document.querySelector('textarea');
+const text = document.querySelector('input');
 const button = document.querySelector('button');
 const error = document.getElementById('error');
 const post = document.getElementById('post');
@@ -13,7 +13,7 @@ const list = post.querySelector('ul');
 */
 
 error.style.textTransform = 'capitalize';
-error.style.color = 'rgba(255,0,0,0.8)';
+error.style.color = '$secondary-color';
 list.style.listStyleType = 'none';
 post.style.padding = '0.5em 2em'
 // post.style.textAlign = 'center';
@@ -56,12 +56,13 @@ const acceptData = () => {
 // validating the form
 const formValidate = () => {
     if (text.value === '') {
-        console.log('Empty Task Not Created');
-        error.innerHTML = '<strong>Empty task not created</strong>';
+        error.innerHTML = '<em>Empty task not created</em>';
+        setTimeout(function () {
+            error.innerHTML = '';
+        }, 1500);
     }
     else {
         error.innerHTML = '';
-        console.log('Received');
         acceptData();
     }
 }
