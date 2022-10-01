@@ -137,7 +137,7 @@ class NavCard extends HTMLElement{
 
         this.attachShadow({ mode: 'open' });
         this.shadowRoot.appendChild(nav.content.cloneNode(true));
-        this.shadowRoot.getElementById('menu-btn').innerHTML = `<img src='../images/more.png'>`;
+        this.shadowRoot.getElementById('menu-btn').innerHTML = `<img src='./images/more.png'>`;
     }
 
     openMenu() {
