@@ -20,7 +20,7 @@ section {
 }
 
 #text {
-    background-color: #f3d9e3;
+    background-color: #999;
     /* color: silver; */
 }
 
@@ -29,17 +29,27 @@ section {
 }
 
 button {
-    background: linear-gradient(45deg, gray, darkgray);
-    border: none;
-    padding: .3em .55em;
-    color: #fff;
     cursor: pointer;
-    border-radius: 15px;
-    transition: transform 1s;
+    border: none;
+    border-radius: 3px;
 }
-button:active {
-    /* transform: scale(1.3); */
+/* 
+button:focus {
+    /* transform: scale(1.3);
     border: #0c0 1px solid;
+} */
+
+#btn {
+    background-color: #333;
+    color: #c0c0c0;
+    padding: 0.3rem;
+}
+
+.edit, .delete, .cross-off {
+    background-color: #555;
+    
+    color: #e2c8d2;
+    padding: 0.2em;
 }
 
 #post {
@@ -51,6 +61,7 @@ button:active {
 }
 #post div > p {
     margin-bottom: 10px;
+    text-transform: capitalize;
 }
 
 #post div {

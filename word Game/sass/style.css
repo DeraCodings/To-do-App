@@ -1,0 +1,145 @@
+button {
+  padding: .5em .7em;
+  cursor: pointer;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
+}
+
+.dark-body {
+  background-color: #333;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 2.5rem;
+  margin: 2%;
+}
+
+.main-header .text-container {
+  text-align: center;
+}
+
+.main-header button {
+  margin: .5em 1em;
+  border-radius: 20px;
+}
+
+.main-header .light-theme::before {
+  content: 'Dark';
+}
+
+.main-header .light-theme:active, .main-header .light-theme:focus {
+  outline: #333 1px solid;
+}
+
+.main-header .light-theme {
+  border: #f4f4f4 2px solid;
+  background-color: #79bd0b;
+  color: #f4f4f4;
+}
+
+.main-header .dark-theme {
+  border: #333 2px solid;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.main-header .dark-theme:active, .main-header .dark-theme:focus {
+  outline: #f4f4f4 1px solid;
+}
+
+.main-header .dark-theme::before {
+  content: 'Light';
+}
+
+#section {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section .form-wrapper {
+  text-align: center;
+  padding: 3%;
+}
+
+#section .form-wrapper button {
+  margin-top: 1.5rem;
+  background-color: #79bd0b;
+  border-radius: 8px;
+}
+
+#section .form-wrapper .check-match {
+  border: #f4f4f4 1px solid;
+  color: #f4f4f4;
+}
+
+#section .form-wrapper .check-match-dark {
+  color: #333;
+  border: #79bd0b 1px solid;
+}
+
+#section .form-wrapper .text {
+  background-color: #f4f4f4;
+  border: #333 1px solid;
+}
+
+#section .form-wrapper .text-dark {
+  background-color: #333;
+  border: #79bd0b 1px solid;
+  color: #f4f4f4;
+}
+
+.span {
+  color: #79bd0b;
+}
+
+.caption-dark {
+  color: #f4f4f4;
+}
+
+.h1-dark {
+  color: #f4f4f4;
+}
+
+.small-dark {
+  color: #f4f4f4;
+}
+
+.error {
+  margin-top: 2em;
+  letter-spacing: 1px;
+}
+
+input {
+  width: 50%;
+  border-radius: 5px;
+  margin-top: 2em;
+  padding: .3em;
+}
+/*# sourceMappingURL=style.css.map */

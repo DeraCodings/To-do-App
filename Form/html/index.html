@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="stylesheet" href="../styles/media.css">
+    <script src="../scripts/form.js" defer></script>
+    <title>Login-Form</title>
+</head>
+<body>
+    <header id="header" class="header-light">
+        <h1>C<span>ode</span>X</h1>
+        <button id="theme-btn" class="lite" onclick="changeTheme()"></button>
+        <!-- <progress max="100" value="50"></progress> -->
+        <h2>Sign Up</h2>
+    </header>
+    <section class="form-section-light">
+        <fieldset class="bg-color">
+            <!-- <legend>Create An Account</legend> -->
+            <form action="" class="form-light">
+                <input type="text" placeholder="First Name" id="first-name" class="first">
+                <input type="text" placeholder="Second Name" id="second-name" class="second">
+                <br>
+                <label for="birthday" class="label-lite">Date Of Birth:</label>
+                <input type="date" name="date" id="date" class="date-lite">
+                <br>
+                <label for="email" class="label-lite">Email:</label>
+                <input type="email" name="email" id="email" class="email-lite" placeholder="Email"><br>
+                <label for="tel" class="label-lite">Contact:</label>
+                <input type="tel" name="telephone" id="telephone" class="tel-lite" placeholder="+2340000000">
+                <br>
+                <label for="gender" class="label-lite">Gender:</label>
+                <select name="gender" id="gender" class="gender-lite">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select><br>
+                <label for="Position" class="label-lite">Position:</label>
+                <select name="position" id="position" class="position-lite">
+                    <option value="Web">Web developer</option>
+                    <option value="App">App developer</option>
+                    <option value="devops">DevOps</option>
+                    <option value="Hiring">Hiring Manager</option>
+                    <option value="dev advo">Developer Advocate</option>
+                </select>
+                <br>
+                <input type="checkbox" name="checkbox" id="checkbox"><small>
+                    I have accepted the terms and conditions of the CodeX&apos;s 
+                    company. View the T&amp;Cs <a href="#">Terms and condition</a>
+                </small><br>
+                <button id="btn" class="btn-lite">Sign Up</button>
+            </form>
+        </fieldset>
+    </section>
+</body>
+</html>

@@ -1,0 +1,224 @@
+.slideshow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slideshow img {
+  width: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  -webkit-animation: fade 3500ms ease-in-out infinite;
+          animation: fade 3500ms ease-in-out infinite;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (7)[minmax];
+      grid-template-columns: repeat(minmax(300px 1fr) 7);
+  -ms-grid-rows: (7)[minmax];
+      grid-template-rows: repeat(minmax(300px 1fr) 7);
+}
+
+body a {
+  background-color: #00000070;
+}
+
+body .header {
+  position: relative;
+  grid-row: span 7;
+  grid-column: span 7;
+  padding: .5em;
+  padding-bottom: 15.625rem;
+  background: url(../images/png_20220930_181752_0000.png);
+}
+
+body .header .hero-section {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .header .hero-section div a {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+  color: #edf0f2;
+}
+
+body section {
+  grid-row: span 7;
+  grid-column: span 7;
+}
+
+body .who-we-are {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .who-we-are .text {
+  text-align: center;
+}
+
+body .who-we-are .text h3 {
+  margin-top: 1em;
+}
+
+body .who-we-are .text p {
+  width: 35ch;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+body .who-we-are .image img {
+  width: 15.625rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 6px #000;
+          box-shadow: 0 3px 6px #000;
+}
+
+body .offering {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #edf0f2;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+body .offering h3 {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+body .offering .image-offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .offering .image-offer cloth-card {
+  margin-bottom: 1.5rem;
+}
+
+body .in-the-pic {
+  margin-bottom: 1.5rem;
+}
+
+body .in-the-pic h3 {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+body .quotes {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #edf0f2;
+  padding: 1.5rem .4rem;
+}
+
+body .quotes h3 {
+  margin-left: 1.5rem;
+}
+
+body .lcta {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+body .lcta h4 {
+  margin-left: 1.5rem;
+  margin-bottom: 1em;
+}
+
+body .lcta a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #edf0f2;
+  border-radius: 15px;
+  margin-left: 3rem;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+body footer-card {
+  grid-row: span 7;
+  grid-column: span 7;
+}
+
+@media (max-width: 700px) {
+  body .header {
+    background: url(../images/background.jpeg) center;
+  }
+  body .image-offer {
+    gap: 1.5rem;
+  }
+  body .who-we-are {
+    padding: 1em 5em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .in-the-pic .slideshow img {
+    width: 18rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
